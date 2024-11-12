@@ -1,3 +1,3 @@
-from wallcreate.main import main, get_sha256
+from wallcreate.main import main
 
 __version__ = "0.1.0"
