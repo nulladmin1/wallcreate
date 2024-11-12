@@ -1,0 +1,59 @@
+{
+    "distros": {
+        "Debian": {
+            "openlogo.svg": "https://www.debian.org/logos/openlogo.svg",
+            "openlogo-nd.svg": "https://www.debian.org/logos/openlogo-nd.svg"
+        },
+        "NixOS": {
+            "nix-snowflake-colours.svg": "https://raw.githubusercontent.com/NixOS/nixos-artwork/refs/heads/master/logo/nix-snowflake-colours.svg",
+            "nix-snowflake-white.svg": "https://raw.githubusercontent.com/NixOS/nixos-artwork/refs/heads/master/logo/nix-snowflake-white.svg",
+            "nixos-text-below.svg": "https://raw.githubusercontent.com/NixOS/nixos-artwork/refs/heads/master/logo/nixos-text-below.svg",
+            "nixos-white.svg": "https://raw.githubusercontent.com/NixOS/nixos-artwork/refs/heads/master/logo/nixos-white.svg",
+            "nixos.svg": "https://raw.githubusercontent.com/NixOS/nixos-artwork/refs/heads/master/logo/nixos.svg"
+        },
+        "Ubuntu": {
+            "UbuntuCoF.svg": "https://upload.wikimedia.org/wikipedia/commons/9/9e/UbuntuCoF.svg"
+        },
+        "Kubuntu": {
+            "kubuntu-dual-text.svg": "https://raw.githubusercontent.com/kubuntu-team/kubuntu-branding/refs/heads/main/Assets/Logo/Horiz%20Open%20Shape%20-%20Full%20-%20Text.svg",
+            "kubuntu-square-mono.svg": "https://raw.githubusercontent.com/kubuntu-team/kubuntu-branding/refs/heads/main/Assets/Logo/Square%20-%20Mono%20-%20Symbol.svg"
+        },
+        "Mint": {
+            "badge.svg": "https://raw.githubusercontent.com/linuxmint/brand-logo/refs/heads/master/badge.svg",
+            "leaf.svg": "https://raw.githubusercontent.com/linuxmint/brand-logo/refs/heads/master/leaf-badge.svg"
+        },
+        "Linux": {
+            "tux.svg": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
+        },
+        "Fedora": {
+            "fedora.svg": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg"
+        },
+        "Pop": {
+            "pop_logo.svg": "https://upload.wikimedia.org/wikipedia/commons/4/46/Pop%21_OS_Icon.svg"
+        },
+        "Arch": {
+            "archlinux-logo-light.svg": "https://archlinux.org/static/logos/archlinux-logo-dark-scalable.518881f04ca9.svg",
+            "archlinux-logo-dark.svg": "https://archlinux.org/static/logos/archlinux-logo-light-scalable.1ae4cc2e2469.svg"
+        },
+        "Gentoo": {
+            "gentoo-text.svg": "https://www.gentoo.org/assets/img/logo/gentoo-logo.svg",
+            "gentoo-logo.svg": "https://www.gentoo.org/assets/img/logo/gentoo-signet.svg"
+        }
+    },
+    "de": {
+        "Hyprland": {
+            "HyprlandLogo.png": "skip"
+        },
+        "Gnome": {
+            "GnomeLogoVertical.svg": "https://foundation.gnome.org/wp-content/uploads/sites/12/2021/03/GnomeLogoVertical.svg",
+            "GnomeLogoHorizontal.svg": "https://foundation.gnome.org/wp-content/uploads/sites/12/2021/03/GnomeLogoHorizontal.svg"
+        },
+        "Plasma": {
+            "kde.svg": "https://kde.org/stuff/clipart/logo/kde-logo-white-blue-rounded-source.svg",
+            "plasma.svg": "https://kde.org/stuff/clipart/logo/plasma-logo-colorful.svg"
+        },
+        "Awesome": {
+            "Awesome.svg": "https://upload.wikimedia.org/wikipedia/commons/0/07/Awesome_logo.svg"
+        }
+    }
+}
