@@ -14,25 +14,32 @@
     systems = ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"];
     forEachSystem = nixpkgs.lib.genAttrs systems;
     pkgsFor = forEachSystem (system: import nixpkgs {inherit system;});
+    poetry2nix-lib = forEachSystem(system: poetry2nix.lib.mkPoetry2Nix { pkgs = pkgsFor.${system}; });
   in {
     formatter = forEachSystem (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-    devShells = forEachSystem (system: {
+    devShells = forEachSystem (system: let
+      poetryEnv = (poetry2nix-lib.${system}.mkPoetryEnv {
+        projectDir = ./.;
+        editablePackageSources = {
+          wallcreate = ./wallcreate;
+        };
+      });
+    in {
       default = pkgsFor.${system}.mkShell {
         packages = with pkgsFor.${system}; [
-          python3
           poetry
+          poetryEnv
         ];
       };
     });
 
     apps = forEachSystem (system: let
-      inherit (poetry2nix.lib.mkPoetry2Nix {pkgs = pkgsFor.${system};}) mkPoetryApplication;
-      app = mkPoetryApplication {projectDir = ./.;};
+      wallcreate = poetry2nix-lib.${system}.mkPoetryApplication {projectDir = ./.;};
     in {
       default = {
         type = "app";
-        program = "${app}/bin/app";
+        program = "${wallcreate}/bin/wallcreate";
       };
     });
   };
